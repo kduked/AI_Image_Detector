@@ -1,0 +1,20 @@
+# Model weights — download link provided in README
+layers/
+
+# Training images
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code
+.vscode/
+
+# Training log
+*.json
+
+# OS files
+.DS_Store
+Thumbs.db
