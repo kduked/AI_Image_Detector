@@ -1,10 +1,7 @@
 # AI Image Detector
 
-A desktop application that analyzes images and determines whether they are AI-generated or real photographs. Uses three independent detection layers and combines their results into a final verdict.
+An application that analyzes images and determines whether they are AI-generated or real photographs. Uses three independent detection layers and combines their results into a final verdict.
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
