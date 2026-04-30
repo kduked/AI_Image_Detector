@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 Download the trained model weights from the link below and place the file at `layers/cnn_ai_detector.pth` inside the project folder. Create the `layers/` folder if it does not exist.
 
-📥 **[Download cnn_ai_detector.pth](https://drive.google.com/file/d/1Wo4MOpKJW11RD-Mnjo3irKBTO_Yva7fC/view?usp=drive_link)**
+**[Download cnn_ai_detector.pth](https://drive.google.com/file/d/1Wo4MOpKJW11RD-Mnjo3irKBTO_Yva7fC/view?usp=drive_link)**
 
 Your folder structure should look like this after downloading:
 ```
@@ -91,11 +91,11 @@ AI Image Detector/
 python main.py
 ```
 
-The GUI will open. The CNN model loads in the background on startup — wait for the status indicator in the top right to show **Ready** before analyzing images.
+The GUI will open. The CNN model loads in the background on startup — wait for the status indicator in the top right to show -Ready- before analyzing images.
 
-**To analyze an image:**
+For Analyizing Image
 - Drag and drop any image file onto the drop zone
-- Or click **Browse file** to open a file picker
+- Or click Browse File to open a file picker
 
 Supported formats: `.jpg` `.jpeg` `.png` `.webp` `.bmp` `.tiff` `.jfif`
 
@@ -107,9 +107,9 @@ The results panel shows each layer's findings individually, then a final combine
 
 | Indicator | Meaning |
 |-----------|---------|
-| 🟢 | Likely real photo |
-| 🔴 | Likely AI-generated |
-| ⚠ | Low confidence — result uncertain |
+| Green | Likely real photo |
+| Red   | Likely AI-generated |
+| Yellow| Low confidence — result uncertain |
 
 The confidence percentage and vote breakdown (e.g. `AI 3 / Real 1`) are shown alongside the verdict so you can see how strongly the layers agreed.
 
@@ -119,7 +119,7 @@ The confidence percentage and vote breakdown (e.g. `AI 3 / Real 1`) are shown al
 
 - The CNN model loads once at startup. Subsequent image analyses reuse the loaded model so there is no reload delay after the first image.
 - On CPU (no GPU), each image analysis takes a few seconds due to test-time augmentation running multiple forward passes. On GPU it is near-instant.
-- The model was trained on approximately 10,000 AI-generated and 10,000 real images. It performs best on images from common AI generators such as Stable Diffusion, Midjourney, and DALL-E. Accuracy may vary on images from newer or less common generators.
+- The model was trained on approximately 10,000 Images, 5000 AI-generated and 5,000 real images. It performs best on images from common AI generators. Accuracy may vary on images from newer or less common generators.
 
 ---
 
