@@ -28,22 +28,6 @@ A deep learning model trained on AI-generated vs real images using two-phase fin
 
 ---
 
-## Project Structure
-
-```
-AI Image Detector/
-│
-├── main.py               # GUI application — run this to use the detector
-├── metadata.py           # Layer 1: EXIF metadata analysis
-├── pixel_analysis.py     # Layer 2: Pixel-level analysis
-├── cnn_detector.py       # Layer 3: EfficientNet-B0 CNN inference
-├── requirements.txt      # Python dependencies
-│
-└── layers/
-    └── cnn_ai_detector.pth   # Trained model weights (download link below)
-```
-
----
 
 ## Requirements
 
@@ -71,17 +55,6 @@ Download the trained model weights from the link below and place the file at `la
 
 **[Download cnn_ai_detector.pth](https://drive.google.com/file/d/1Wo4MOpKJW11RD-Mnjo3irKBTO_Yva7fC/view?usp=drive_link)**
 
-Your folder structure should look like this after downloading:
-```
-AI Image Detector/
-├── main.py
-├── metadata.py
-├── pixel_analysis.py
-├── cnn_detector.py
-├── requirements.txt
-└── layers/
-    └── cnn_ai_detector.pth   ← place the downloaded file here
-```
 
 ---
 
