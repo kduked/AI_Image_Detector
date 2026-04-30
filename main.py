@@ -1,11 +1,6 @@
 # main.py
+
 """
-AI Image Detector — GUI
-Drag and drop an image to run it through all three detection layers.
-
-Dependencies (all standard except tkinterdnd2):
-    pip install tkinterdnd2 pillow
-
 Layers:
   1. Metadata analysis  — checks EXIF data for missing/suspicious fields
   2. Pixel analysis     — checks noise, frequency, edges, texture, colour
@@ -53,7 +48,6 @@ FONT_BIG    = ("Segoe UI Semibold", 28)
 FONT_LABEL  = ("Segoe UI", 9)
 
 
-# ── Backend logic (same as original main.py) ───────────────────────────────────
 class Detector:
     def __init__(self):
         self.cnn = None

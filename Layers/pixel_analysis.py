@@ -116,15 +116,7 @@ def analyze_color(image_color):
     }
 
 def get_pixel_analysis_results(image_path):
-    """
-    Complete pixel analysis pipeline
-    
-    Args:
-        image_path: Path to image file
-        
-    Returns:
-        Dictionary with pixel analysis results
-    """
+   
     image_color = cv2.imread(image_path)
     image_gray = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     
