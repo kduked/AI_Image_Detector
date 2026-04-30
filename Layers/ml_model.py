@@ -196,7 +196,7 @@ def get_cnn_results(
 # ── Entry point ────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     MODEL_PATH = r"C:\Users\Dylan\.vscode\AI Image Detector\layers\cnn_ai_detector.pth"
-    IMAGE_PATH = r"C:\Users\Dylan\.vscode\AI Image Detector\data\ai\Cow.png"
+    
 
     result = get_cnn_results(IMAGE_PATH, model_path=MODEL_PATH)
 
